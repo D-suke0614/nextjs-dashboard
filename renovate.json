@@ -1,0 +1,24 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["config:base"],
+    "schedule": ["before 2am on the first day of the month"],
+    "lockFileMaintenance": {
+      "enabled": true,
+      "automerge": true
+    },
+    "major": {
+      "automerge": true
+    },
+    "minor": {
+      "automerge": true
+    },
+    "patch": {
+      "automerge": true
+    },
+    "packageRules": [
+      {
+        "groupName": "node",
+        "matchPackageNames": ["node", "npm"]
+      }
+    ]
+  }
